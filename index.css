@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* whole body */
+body {
+    display: inline-flex;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+/* img from left */
+.bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+/* title */
+h1 {
+    margin: 0 10px 0 25px;
+    font-family: Tahoma;
+}
+/* privacy notice */
+p {
+    margin: 0 0 7px 20px;
+    width:fit-content;
+    padding: 10px;
+    text-justify: auto;
+    font-size:xx-small;
+    width: 400px;
+}
+.bold {
+    font-size:x-small
+}
+/* logo */
+.IC {
+    width: 90px;
+    height: 90px;
+}
+/* upper portion */
+.Inner-Up {
+    display: inline-flex;
+    margin: 0;
+    width: 500px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+/* The whole form */
+form {
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+
+/* Box mismo */
+fieldset {
+    margin: 0 auto;
+    max-width: fit-content;
+    min-height: fit-content;
+    padding: 2rem 0;
+    border-radius: 6px;
+    border: 1.5px solid black;
+    background-color: rgb(227, 228, 233);
+}
+/* Text before input text */
+label {
+    display: block;
+    margin: 20px 0 0 10px;
+    font-family: Tahoma;
+}
+/* input */
+input{
+    margin: 0 10px 0 10px;
+    padding: 0 0 0 5px;
+    width: 440px;
+    height: 40px;
+}
+input:placeholder-shown {
+    text-align: left;
+    padding-left: 5px;
+}
+
+/* submit button*/
+#submit {
+    padding: 2px;
+    margin: 20px 0 0 204px;
+    width: auto;
+    height: fit-content;
+    background-color: white /*#d5d5d8*/;
+    border-color: #d5d5d8;
+    font-size: 1rem;
+}
+#msg {
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.rightside {
+    margin: 30px 10px 30px 10px;
+}
+
