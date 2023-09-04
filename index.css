@@ -1,18 +1,28 @@
 /* whole body */
-body {
-    display: inline-flex;
-    margin: 0;
+* {
+    box-sizing: border-box;
+}
+html, body {
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    position: absolute;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
+.wrapper {
+    display: inline-flex;
+    max-width: 100%;
+    height: 100%;
 }
 /* img from left */
 .bg {
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+    max-width: 63%;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 /* title */
 h1 {
@@ -22,9 +32,7 @@ h1 {
 /* privacy notice */
 p {
     margin: 0 0 7px 20px;
-    width:fit-content;
     padding: 10px;
-    text-justify: auto;
     font-size:xx-small;
     width: 400px;
 }
@@ -46,10 +54,14 @@ p {
     text-align: center;
     align-items: center;
 }
+.header {
+    max-width: 100%;
+    max-height: 100%;
+}
 /* The whole form */
 form {
     margin: 0 auto;
-    padding-bottom: 0;
+    padding: 0;
 }
 
 /* Box mismo */
@@ -75,28 +87,64 @@ input{
     width: 440px;
     height: 40px;
 }
+
 input:placeholder-shown {
     text-align: left;
     padding-left: 5px;
 }
 
 /* submit button*/
-#submit {
+button {
     padding: 2px;
-    margin: 20px 0 0 204px;
+    position: relative;
+    left: 42%;
     width: auto;
-    height: fit-content;
     background-color: white /*#d5d5d8*/;
     border-color: #d5d5d8;
     font-size: 1rem;
 }
 #msg {
-    margin: 15px 0 0 0;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
 
 .rightside {
-    margin: 30px 10px 30px 10px;
+    margin-top: 30px;
+    max-width: 100%;
+    max-height: 100%;
 }
-
+/*MEDIA QUERY FOR MOBILE RESPONSIVENESS */ 
+@media (max-width: 480px) {
+    .header {
+        margin: 0;
+        padding: 0;
+        min-width: 50%;
+    }
+    fieldset {
+        margin: 20px 10px 10px 10px;
+        padding: auto;
+    }
+    .wrapper {
+        width: 100%;
+    }
+}
+@media (min-width: 390px) and (max-width: 475px) {
+    .Inner-Up {
+        width: 100%;
+        height: 100%;
+    }
+    p {
+        margin: 0;
+    }
+    form {
+       margin: 0;
+    }
+    fieldset {
+        margin: 5px;
+        min-width: 300px;
+    }
+    input {
+        max-width: 360px;
+    }
+}
