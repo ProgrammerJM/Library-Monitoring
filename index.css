@@ -103,11 +103,18 @@ button {
     border-color: #d5d5d8;
     font-size: 1rem;
 }
+
+#submit:hover {
+    background-color: rgb(207, 203, 203);
+    color: white;
+}
+
 #msg {
     margin: 0;
     display: flex;
     justify-content: center;
 }
+
 
 .rightside {
     margin-top: 30px;
