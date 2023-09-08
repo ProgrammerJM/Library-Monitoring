@@ -43,9 +43,18 @@
     }
     } -->
 # 4. Save and Run
-# 5. Go to Triggers > Add Trigger
-# 6. Choose which Function to Run to  'doPost' > Select Event Source 'From Spreadsheet' > Save
-# 7. Click Deploy > New Deployments > Select type: 'Web app' > Who has access: 'Anyone' > Deploy
-# 8. Copy and Save the Web app 'URL'
-# 9. In Script.js > Paste the URL to ScriptURL = 'URL'
+# 5. Go to Triggers 
+    <!-- Add Trigger
+    Choose which Function to Run to  'doPost' 
+    Select Event Source 'From Spreadsheet' 
+    Save -->
+# 7. Deployment > 
+    Click Deploy
+    New Deployments
+    Select type: 'Web app'
+    Who has access: 'Anyone'
+    Deploy
+    Copy and Save the Web app 'URL'
+# 9. In Script.js
+    Paste the URL to ScriptURL = 'URL'
 # 10. Done!
