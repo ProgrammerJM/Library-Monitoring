@@ -2,7 +2,7 @@
 # 1. Create a blank google spreadsheet
 # 2. Go to Extensions > Appscript
 # 3. Paste this code to Code.gs
-    <!-- var sheetName = 'Sheet1'
+    var sheetName = 'Sheet1'
     var scriptProp = PropertiesService.getScriptProperties()
 
     function intialSetup () {
@@ -41,13 +41,13 @@
     finally {
         lock.releaseLock()
     }
-    } -->
+    }
 # 4. Save and Run
 # 5. Go to Triggers 
-    <!-- Add Trigger
+    Add Trigger
     Choose which Function to Run to  'doPost' 
     Select Event Source 'From Spreadsheet' 
-    Save -->
+    Save
 # 7. Deployment > 
     Click Deploy
     New Deployments
