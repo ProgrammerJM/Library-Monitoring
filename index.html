@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Styles.css"/>
         <link rel="icon" type="image/x-icon" href="./assets/IC.ico">
-        <script defer src="Script.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -29,12 +28,16 @@
                                         required oninvalid="this.setCustomValidity('Please enter your valid ID Number')" pattern="\d{4}-\d{5}|\d{9}" oninput="this.setCustomValidity('')">
                                         <label for="college/unit">College / Unit</label><input type="text" name="College/Unit" id="college/unit" placeholder="e.g. CS-IC" autocomplete="off" 
                                         required oninvalid="this.setCustomValidity('Please enter your College / Unit')" oninput="this.setCustomValidity('')">
-                                        <label for="Submit"><button type="submit" name="submit" id="submit" value="submit">Submit</button></label>
+                                        <input type="submit" name="submit" id="submit" value="Submit / Enter"></input></label>
+                                        <div id="myProgress">
+                                            <div id="progress-bar"></div>
+                                          </div>
                                         <span id='msg'></span>
                                 </fieldset>
                         </form>  
                     </div> 
             </div>
         </div>
+        <script src="Script.js"></script>
     </body>
 </html>
