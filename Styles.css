@@ -114,6 +114,8 @@ input[type=submit] {
     border: 0.5px outset #ccc;
     border-radius: 6px;
     box-sizing: border-box;
+    color: #fff;
+    background: #333;
 }
 
 #submit:hover {
