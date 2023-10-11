@@ -111,9 +111,10 @@ input[type=submit] {
     width: 400px;
     height: 40px;
     position: relative;
-    border: 0.5px outset #ccc;
+    border: 0.2px outset #ccc;
     border-radius: 6px;
     box-sizing: border-box;
+    text-align: center;
     color: #fff;
     background: #333;
 }
